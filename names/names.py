@@ -35,3 +35,11 @@ print(f"runtime: {end_time - start_time} seconds")
 # Python has built-in tools that allow for a very efficient approach to this problem
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
+set_names = set(names_1)
+another_duplicates = set_names.intersection(names_2)
+
+
+end_time2 = time.time()
+print(f"{len(another_duplicates)} another_duplicates:\n\n{', '.join(another_duplicates)}\n\n")
+print(f"runtime: {end_time2 - start_time} seconds")
+
